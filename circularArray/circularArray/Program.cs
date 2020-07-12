@@ -11,6 +11,7 @@ namespace circularArray
         static void Main(string[] args)
         {
             Console.WriteLine("hihi");
+            Console.WriteLine("hihi2");
         }
     }
 }
