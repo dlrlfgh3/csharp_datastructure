@@ -10,8 +10,21 @@ namespace circularArray
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hihi");
-            Console.WriteLine("hihi2");
+            CircularArray arr = new CircularArray(10);
+
+            // push
+            arr.push_back();
+            arr.push_back();
+            arr.push_back();
+            arr.push_back();
+            arr.push_back();
+
+            // pop
+            arr.pop_front();
+            arr.pop_front();
+            arr.pop_front();
+            arr.pop_front();
+
         }
     }
 }

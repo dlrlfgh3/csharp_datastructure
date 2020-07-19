@@ -8,7 +8,7 @@ namespace dynamicArray
 {
     class Temp
     {
-        int a = 0;
+        public int a = 0;
 
         public Temp(int a)
         {
@@ -28,8 +28,9 @@ namespace dynamicArray
             arr.remove(2);
             arr.Add(new Temp(3));
             arr.Add(new Temp(4));
-
+            
             arr.remove(2);
+            Console.WriteLine(arr[1].a);
         }
     }
 }
