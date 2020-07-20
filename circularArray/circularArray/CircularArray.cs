@@ -26,7 +26,7 @@ namespace circularArray
             _count = 0;
             _rear = 0;
             _front = 0;
-            _arr = new T[_capacity];
+            _arr = new T[_realCapacity];
         }
 
         public bool push_back(T item)
