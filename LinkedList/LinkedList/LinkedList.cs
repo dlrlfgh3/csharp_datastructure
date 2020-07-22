@@ -14,7 +14,7 @@ namespace LinkedList
         {
             public Node()
             {
-                _nextNode = null;   
+                _nextNode = null;
             }
 
             public Node(T data, ref Node head)
@@ -24,13 +24,24 @@ namespace LinkedList
                 head = this;
                 _nextNode = null;
             }
+
+            public static void NextNode(ref Node node)
+            {
+                node = node._nextNode;
+            }
+
+            public T getData()
+            {
+                return _data;
+            }
+
             T _data;
             Node _nextNode;
         }
 
         public CLinkedList()
         {
-             _head = new Node();
+            _head = new Node();
             _tail = _head;
         }
 
@@ -42,6 +53,19 @@ namespace LinkedList
         public void Remove()
         {
 
+        }
+
+        public T this[int index]
+        {
+            get
+            {
+                Node _indexNode = _tail;
+                for(int i = 0; i < index;i++)
+                {
+                    Node.NextNode(ref _indexNode);
+                }
+                return _indexNode.getData();
+            }
         }
 
     }

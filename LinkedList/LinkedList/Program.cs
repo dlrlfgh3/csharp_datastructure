@@ -27,7 +27,8 @@ namespace LinkedList
             t.Add(new TT(3));
             t.Add(new TT(4));
             t.Add(new TT(5));
-
+            TT t1 = t[3];
+            
         }
     }
 }
